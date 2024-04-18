@@ -10,6 +10,7 @@ try:
 except ValueError:
 	print('You type not a number')
 
+
 # якщо слідувати всім іструкціям з ДЗ, то має бути якось так
 numb = int(input('Type a four-digit number\n'))
 print(numb // 1000)
