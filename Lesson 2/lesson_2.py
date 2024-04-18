@@ -1,4 +1,4 @@
-# я би робив так
+# я б робив так
 try:
 	numb = input('Type a four-digit number and press Enter\n')
 	numb = int(numb)
