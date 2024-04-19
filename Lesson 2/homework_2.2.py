@@ -7,4 +7,4 @@ sumb_5 = numb // 10000
 reversed_numb = sumb_1 * 10000 + sumb_2 * 1000 + sumb_3 * 100 + sumb_4 * 10 + sumb_5
 print(reversed_numb)
 print(type(reversed_numb))
-# строки не використав
+# без використання рядків, тільки цілі числа
