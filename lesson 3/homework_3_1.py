@@ -21,17 +21,19 @@ elif operation == '/':
 else:
 	print('Error')
 
-#як би я робив без опирання на пройдений матеріал:
-def calc(x, y, operation):
-	if operation == '+':
-		return x + y
-	elif operation == '-':
-		return x - y
-	elif operation == '*':
-		return x * y
-	elif operation == '/':
+# як би я робив без опирання на пройдений матеріал:
+
+
+def calc(x2, y2, operation2):
+	if operation2 == '+':
+		return x2 + y2
+	elif operation2 == '-':
+		return x2 - y2
+	elif operation2 == '*':
+		return x2 * y2
+	elif operation2 == '/':
 		if y != 0:
-			return x / y
+			return x2 / y2
 		else:
 			return "Error, you can't divide by zero"
 	else:
@@ -50,5 +52,7 @@ def main():
 		except Exception as err:
 			print(err)
 			break
+
+
 if __name__ == "__main__":
 	main()
