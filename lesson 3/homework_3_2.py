@@ -14,3 +14,4 @@ else:
 	x.insert(0, x[-1])
 	x.pop(-1)
 	print(x)
+	
