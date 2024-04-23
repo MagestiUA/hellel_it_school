@@ -11,8 +11,6 @@ x = [12, 3, 4, 10, 8, 16]
 if len(x) <= 1:
 	print(x)
 else:
-	first = x[0]
-	last = x[-1]
-	x[0] = last
-	x[-1] = first
+	x.insert(0, x[-1])
+	x.pop(-1)
 	print(x)
