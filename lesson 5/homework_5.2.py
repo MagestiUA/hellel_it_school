@@ -13,8 +13,6 @@ while True:
 			print(x / y)
 		else:
 			print('''Error, you can't divide by zero''')
-	else:
-		print('unknown operation')
 	approval = input('Do you want to continue? (Yes or y)\n')
 	approval = approval.lower()
 	if approval == 'yes' or approval == 'y':
