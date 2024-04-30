@@ -11,7 +11,7 @@ def check_variable_name():
 		return False
 	if any(i in disable_symbols for i in variable_name):
 		return False
-	if variable_name != '_' and variable_name.count('_') > 1:
+	if variable_name.count('_') > 1:
 		return False
 	if variable_name in keyword.kwlist:
 		return False
