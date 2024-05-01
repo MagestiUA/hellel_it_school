@@ -9,9 +9,9 @@ def check_variable_name():
 		return False
 	if not variable_name.islower() and variable_name != '_':
 		return False
-	if any(i in disable_symbols for i in variable_name):
+	if any(symbols in disable_symbols for symbols in variable_name):
 		return False
-	if variable_name.count('_') > 1:
+	if variable_name != '_' and '_' in variable_name and len(set(variable_name)) == 1:
 		return False
 	if variable_name in keyword.kwlist:
 		return False
@@ -21,4 +21,3 @@ def check_variable_name():
 if __name__ == '__main__':
 	while True:
 		print(check_variable_name())
-		
