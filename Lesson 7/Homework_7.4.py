@@ -28,4 +28,5 @@ def common_elements():
 	return set1.intersection(set2)
 
 
-print(common_elements())
+if __name__ == '__main__':
+	print(common_elements())

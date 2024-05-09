@@ -10,9 +10,10 @@ def second_index(text: str, some_str: str) -> int | None:
 	return second_char_index if second_char_index != -1 else None
 
 
-assert second_index("sims", "s") == 3
-assert second_index("find the river", "e") == 12
-assert second_index("hi", "h") is None
-assert second_index("Hello, hello", "lo") == 10
-assert second_index("Hello, he11o", "") is None
-print('ОК')
+if __name__ == '__main__':
+	assert second_index("sims", "s") == 3
+	assert second_index("find the river", "e") == 12
+	assert second_index("hi", "h") is None
+	assert second_index("Hello, hello", "lo") == 10
+	assert second_index("Hello, he11o", "") is None
+	print('ОК')

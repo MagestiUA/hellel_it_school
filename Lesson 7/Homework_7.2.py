@@ -17,9 +17,10 @@ def correct_sentence(text: str) -> str:
 	return text
 
 
-assert correct_sentence("__!!__..11greetings, friends!!_.1") == "Greetings, friends."
-assert correct_sentence("hello") == "Hello."
-assert correct_sentence("Greetings. Friends") == "Greetings. Friends."
-assert correct_sentence("Greetings, friends.") == "Greetings, friends."
-assert correct_sentence("greetings, friends.") == "Greetings, friends."
-print('ОК')
+if __name__ == '__main__':
+	assert correct_sentence("__!!__..11greetings, friends!!_.1") == "Greetings, friends."
+	assert correct_sentence("hello") == "Hello."
+	assert correct_sentence("Greetings. Friends") == "Greetings. Friends."
+	assert correct_sentence("Greetings, friends.") == "Greetings, friends."
+	assert correct_sentence("greetings, friends.") == "Greetings, friends."
+	print('ОК')
