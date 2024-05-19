@@ -7,6 +7,8 @@ def first_word(text: str) -> str:
 	"""
 	if not isinstance(text, str):
 		raise TypeError('Argument must be string')
+	if len(text) == 0:
+		raise TypeError('Argument must not be empty')
 	for char in string.punctuation.replace("'", ''):
 		text = text.replace(char, ' ')
 	return text.strip().split()[0]
