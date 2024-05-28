@@ -36,9 +36,7 @@ class Group:
 		return next((student for student in self.group if student.last_name == last_name), None)
 
 	def __str__(self):
-		all_students = ''
-		for student in self.group:
-			all_students += str(student) + '\n'
+		all_students = '\n'.join(str(student) for student in self.group)
 		return f'Number:{self.number}\n{all_students}'
 
 
