@@ -41,18 +41,19 @@ class Rectangle:
 		return factor_pairs[-1]
 
 
-r1 = Rectangle(2, 4)
-r2 = Rectangle(3, 6)
-r3 = Rectangle(4, 2)
-assert r1.get_square() == 8
-assert r2.get_square() == 18
-assert r1 == r3
-
-r3 = r1 + r2
-assert r3.get_square() == 26
-
-r4 = r1 * 4
-assert r4.get_square() == 32
-
-assert Rectangle(3, 6) == Rectangle(2, 9)
-print('OK')
+if __name__ == '__main__':
+	r1 = Rectangle(2, 4)
+	r2 = Rectangle(3, 6)
+	r3 = Rectangle(4, 2)
+	assert r1.get_square() == 8
+	assert r2.get_square() == 18
+	assert r1 == r3
+	
+	r3 = r1 + r2
+	assert r3.get_square() == 26
+	
+	r4 = r1 * 4
+	assert r4.get_square() == 32
+	
+	assert Rectangle(3, 6) == Rectangle(2, 9)
+	print('OK')
