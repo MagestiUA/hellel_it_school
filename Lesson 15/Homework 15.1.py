@@ -19,14 +19,14 @@ class Rectangle:
 			new_area = self.get_square() + other.get_square()
 			side_1, side_2 = self.find_sides(new_area)
 			return Rectangle(side_1, side_2)
-		return NotImplemented
+		raise TypeError('Actions can be performed only on objects of the Rectangle class')
 
 	def __mul__(self, n: int) -> 'Rectangle':
 		if isinstance(n, int):
 			new_area = self.get_square() * n
 			side_1, side_2 = self.find_sides(new_area)
 			return Rectangle(side_1, side_2)
-		return NotImplemented
+		raise TypeError('Argument must be an integer')
 
 	def __str__(self):
 		return f"Rectangle(width={self.width}, height={self.height}, area={self.get_square()})"
