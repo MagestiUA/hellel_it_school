@@ -1,2 +1,0 @@
-class GroupIsFullException(Exception):
-	pass
